@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyBoardGame</title>
+
+    <style>
+        body{
+            margin: auto;
+        }
+        #header {
+            text-align: center;
+        }
+        #keyBoard {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+            #firstLine, #secondLine, #thirdLine {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                .keys{
+                    border: 2px solid black;
+                    border-radius: 5px;
+                    width: 5%;
+                    margin: 3px;
+                }
+    </style>
+
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header id="header">
+        <h1>Key Board Game</h1>
+    </header>
+    <section id="keyBoard">
+
+        <div id="firstLine">
+        </div>
+        <div id="secondLine">
+        </div>
+        <div id="thirdLine">
+        </div>
+<!-- 
+        <div class="keys">
+            <h2>q</h2>
+        </div>
+        <div class="keys">
+            <h2>w</h2>
+        </div>
+        <div class="keys" style="break-after: after;">
+            <h2>e</h2>
+        </div>
+        <div class="keys">
+            <h2>r</h2>
+        </div>
+        <div class="keys">
+            <h2>t</h2>
+        </div>
+
+ -->
+
+    </section>
+
+    <script src="./index.js"></script>
 </body>
 </html>
