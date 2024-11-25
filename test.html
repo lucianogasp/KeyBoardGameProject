@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="position: relative; width: 300px; height: 150px;">
+        <canvas id="myCanvas" width="300" height="150" style="position: absolute; z-index: 0;"></canvas>
+        <div style="
+          position: absolute;
+          width: 300px;
+          height: 150px;
+          background: transparent;
+          border: 2px solid black;
+          border-radius: 20px;
+          z-index: 1;
+        "></div>
+      </div>
+      <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+      
+        // Desenhe o conteúdo do canvas sem se preocupar com as bordas
+        ctx.fillStyle = '#4CAF50';
+        ctx.fillRect(0, 0, 300, 150);
+      </script>
+      
+</body>
+</html>

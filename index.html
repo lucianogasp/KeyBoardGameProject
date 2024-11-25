@@ -12,23 +12,10 @@
         #header {
             text-align: center;
         }
-        #keyBoard {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
+        canvas {
+            border: 2px solid black;
+            margin: 50px 50px 0px 50px ;
         }
-            #firstLine, #secondLine, #thirdLine {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-                .keys{
-                    border: 2px solid black;
-                    border-radius: 5px;
-                    width: 5%;
-                    margin: 3px;
-                }
     </style>
 
 </head>
@@ -36,35 +23,11 @@
     <header id="header">
         <h1>Key Board Game</h1>
     </header>
-    <section id="keyBoard">
-
-        <div id="firstLine">
-        </div>
-        <div id="secondLine">
-        </div>
-        <div id="thirdLine">
-        </div>
-<!-- 
-        <div class="keys">
-            <h2>q</h2>
-        </div>
-        <div class="keys">
-            <h2>w</h2>
-        </div>
-        <div class="keys" style="break-after: after;">
-            <h2>e</h2>
-        </div>
-        <div class="keys">
-            <h2>r</h2>
-        </div>
-        <div class="keys">
-            <h2>t</h2>
-        </div>
-
- -->
-
-    </section>
-
+    <canvas tabindex="0" id="myCanvas" width="1432" height="300px">
+        
+        
+    </canvas>
+    
     <script src="./index.js"></script>
 </body>
 </html>
