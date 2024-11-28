@@ -1,11 +1,19 @@
-const obj = {
-    x: 0, y: 1
-};
-const objL = [
-    {x: 'x', y: 'y', z: 'z'}
-]
+var array = [1, 2, 3, 4];
+let c = 0
 
-console.log('type of obj: ' + typeof(obj))
-console.log('type of objL: ' + typeof(objL))
-console.log(objL[0])
+class Oi {
+    constructor () {
+        this.c = 0
+    }
 
+    increment () {
+        this.c++;
+    }
+}
+
+const oi = new Oi();
+console.log(oi.c);
+oi.increment();
+oi.increment();
+oi.increment();
+console.log(oi.c);
