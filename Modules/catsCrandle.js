@@ -46,7 +46,7 @@ export class CatsCrandle {
         if (key) {
             return true;
         } else {
-            alert(`the key '${event.key}' is not availeble`);
+            // alert(`the key '${event.key}' is not availeble`);
             return false;
         }
     }

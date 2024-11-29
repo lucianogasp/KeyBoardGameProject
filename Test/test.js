@@ -1,19 +1,10 @@
 var array = [1, 2, 3, 4];
-let c = 0
-
-class Oi {
-    constructor () {
-        this.c = 0
-    }
-
-    increment () {
-        this.c++;
-    }
+let c = 0;
+console.log(c);
+function name () {
+    let b = 1
+    console.log(b);
 }
-
-const oi = new Oi();
-console.log(oi.c);
-oi.increment();
-oi.increment();
-oi.increment();
-console.log(oi.c);
+name();
+let b = 2
+console.log(b);
