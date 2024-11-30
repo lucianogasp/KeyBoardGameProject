@@ -1,5 +1,5 @@
 
-import { CatsCrandle } from './Modules/catsCrandle.js';
+import { CatsCrandle, StyleCrandle } from './Modules/catsCrandle.js';
 import { KeyBoard } from './Modules/keyBoard.js';
 
 const canvas = document.getElementById('myCanvas');
@@ -39,10 +39,11 @@ keyboard.matrixForEach(keysMatrix);
 canvas.setAttribute('tabindex', '0');
 
 const cat = new CatsCrandle(ctx);
+const style = new StyleCrandle();
 canvas.addEventListener("keydown", event => {
 
     const key = cat.findKey(keysArray, event);
-    const verifyKey = cat.verifyKey(key, event);
+    const verifyKey = cat.verifyKey(key);
     if (!verifyKey) {
         return;
     }
@@ -50,7 +51,8 @@ canvas.addEventListener("keydown", event => {
     if (verifyBackspace) {
         return;
     }
+    let color = style.styleStrokeColor(cat.counterChain, 1, 'black', 'red', 'green', 'blue', 'purple');
     cat.setCurrentPosition(key);
-    cat.strokeLines();
+    cat.strokeLines(color);
 
 });
